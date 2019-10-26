@@ -1,0 +1,46 @@
+2019-10-21T15:40:59.359Z - info: ::1 - GET /products HTTP/1.1 200 141 - 2.619 ms
+2019-10-21T15:41:23.874Z - info: ::1 - GET / HTTP/1.1 401 - - 0.888 ms
+2019-10-21T15:54:51.356Z - info: ::1 - GET /users HTTP/1.1 200 2 - 0.733 ms
+2019-10-21T15:56:18.413Z - info: ::1 - GET /users HTTP/1.1 200 2 - 0.181 ms
+2019-10-21T15:57:06.168Z - info: ::1 - POST /users HTTP/1.1 200 160 - 93.373 ms
+2019-10-21T16:00:08.347Z - info: info Esto es un logger info
+2019-10-21T16:01:37.686Z - info: info Esto es un logger info
+2019-10-21T16:01:37.688Z - warn: WARN
+2019-10-21T16:01:37.688Z - error: ERROR
+2019-10-21T16:23:27.379Z - error: uncaughtException: Cannot find module './resources/lib/logger'
+Require stack:
+- /Users/andresliu/Desktop/krowdy-training/backend/resources/users/users.routes.js
+- /Users/andresliu/Desktop/krowdy-training/backend/index.js {"date":"Mon Oct 21 2019 11:23:27 GMT-0500 (Peru Standard Time)","process":{"pid":4159,"uid":501,"gid":20,"cwd":"/Users/andresliu/Desktop/krowdy-training/backend","execPath":"/usr/local/bin/node","version":"v12.10.0","argv":["/usr/local/bin/node","/Users/andresliu/Desktop/krowdy-training/backend/index.js"],"memoryUsage":{"rss":37470208,"heapTotal":17248256,"heapUsed":11646136,"external":1624541}},"os":{"loadavg":[1.81494140625,2.15185546875,2.22900390625],"uptime":248331},"trace":[{"column":15,"file":"internal/modules/cjs/loader.js","function":"Module._resolveFilename","line":772,"method":"_resolveFilename","native":false},{"column":27,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":677,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":830,"method":"require","native":false},{"column":18,"file":"internal/modules/cjs/helpers.js","function":"require","line":68,"method":null,"native":false},{"column":16,"file":"/Users/andresliu/Desktop/krowdy-training/backend/resources/users/users.routes.js","function":null,"line":9,"method":null,"native":false},{"column":30,"file":"internal/modules/cjs/loader.js","function":"Module._compile","line":936,"method":"_compile","native":false},{"column":10,"file":"internal/modules/cjs/loader.js","function":"Module._extensions..js","line":947,"method":".js","native":false},{"column":32,"file":"internal/modules/cjs/loader.js","function":"Module.load","line":790,"method":"load","native":false},{"column":12,"file":"internal/modules/cjs/loader.js","function":"Module._load","line":703,"method":"_load","native":false},{"column":19,"file":"internal/modules/cjs/loader.js","function":"Module.require","line":830,"method":"require","native":false}],"stack":["Error: Cannot find module './resources/lib/logger'","Require stack:","- /Users/andresliu/Desktop/krowdy-training/backend/resources/users/users.routes.js","- /Users/andresliu/Desktop/krowdy-training/backend/index.js","    at Function.Module._resolveFilename (internal/modules/cjs/loader.js:772:15)","    at Function.Module._load (internal/modules/cjs/loader.js:677:27)","    at Module.require (internal/modules/cjs/loader.js:830:19)","    at require (internal/modules/cjs/helpers.js:68:18)","    at Object.<anonymous> (/Users/andresliu/Desktop/krowdy-training/backend/resources/users/users.routes.js:9:16)","    at Module._compile (internal/modules/cjs/loader.js:936:30)","    at Object.Module._extensions..js (internal/modules/cjs/loader.js:947:10)","    at Module.load (internal/modules/cjs/loader.js:790:32)","    at Function.Module._load (internal/modules/cjs/loader.js:703:12)","    at Module.require (internal/modules/cjs/loader.js:830:19)"]}
+2019-10-21T16:24:36.080Z - info: info Se obtuvo los productos
+2019-10-21T16:24:36.084Z - info: ::1 - GET /products HTTP/1.1 200 141 - 4.891 ms
+2019-10-21T16:25:13.380Z - info: info Se obtuvo los productos
+2019-10-21T16:25:13.385Z - info: ::1 - GET /products HTTP/1.1 200 141 - 3.061 ms
+2019-10-21T16:26:38.348Z - warn: NO PUES PAPI
+2019-10-21T16:26:38.352Z - info: ::1 - GET /products HTTP/1.1 200 141 - 2.673 ms
+2019-10-21T16:31:28.820Z - info: Se obtuvo todos los productos
+2019-10-21T16:31:28.823Z - info: ::1 - GET /products HTTP/1.1 200 141 - 2.723 ms
+2019-10-21T16:32:11.780Z - info: ::1 - POST /products HTTP/1.1 403 18 - 4.429 ms
+2019-10-21T16:32:50.094Z - info: ::1 - POST /products HTTP/1.1 403 18 - 7.336 ms
+2019-10-21T16:34:16.023Z - error: Datos mal ingresados del producto
+2019-10-21T16:34:16.029Z - info: ::1 - POST /products HTTP/1.1 403 18 - 8.996 ms
+2019-10-21T16:34:25.588Z - info: Se agrego nuevo producto
+2019-10-21T16:34:25.588Z - info: ::1 - POST /products HTTP/1.1 200 91 - 4.860 ms
+2019-10-21T16:35:02.068Z - info: ::1 - PUT /products HTTP/1.1 404 147 - 4.184 ms
+2019-10-21T16:35:20.471Z - info: Producto se ha modificado
+2019-10-21T16:35:20.471Z - info: ::1 - PUT /products/3e6a5f7a-6c28-49fe-90a9-f351a6bc8809 HTTP/1.1 200 90 - 0.598 ms
+2019-10-21T16:36:38.667Z - info: Se ha eliminado el producto
+2019-10-21T16:36:38.667Z - info: ::1 - DELETE /products/3e6a5f7a-6c28-49fe-90a9-f351a6bc8809 HTTP/1.1 200 91 - 0.344 ms
+2019-10-21T16:40:23.441Z - info: ::1 - POST /products/ HTTP/1.1 500 1507 - 3.533 ms
+2019-10-21T16:40:31.984Z - info: Se agrego nuevo productoMachin
+2019-10-21T16:40:31.993Z - info: ::1 - POST /products/ HTTP/1.1 200 90 - 5.494 ms
+2019-10-21T17:30:03.741Z - info: Se agrego nuevo producto Machin
+2019-10-21T17:30:03.745Z - info: ::1 - POST /products/ HTTP/1.1 200 90 - 8.900 ms
+2019-10-21T17:30:16.361Z - info: Se agrego nuevo producto Machin
+2019-10-21T17:30:16.364Z - info: ::1 - POST /products/ HTTP/1.1 200 91 - 1.218 ms
+2019-10-21T17:30:24.217Z - info: ::1 - PUT /products/ HTTP/1.1 404 148 - 6.908 ms
+2019-10-21T17:30:39.349Z - info: Se agrego nuevo producto gogo
+2019-10-21T17:30:39.349Z - info: ::1 - POST /products/ HTTP/1.1 200 89 - 0.394 ms
+2019-10-21T17:30:57.728Z - info: Producto gogo se ha modificado
+2019-10-21T17:30:57.729Z - info: ::1 - PUT /products/4bdc1c9f-34fd-4ed5-8c34-723cb7cb9b00 HTTP/1.1 200 87 - 2.647 ms
+2019-10-21T17:31:14.507Z - info: Se ha eliminado el producto gogo
+2019-10-21T17:31:14.507Z - info: ::1 - DELETE /products/4bdc1c9f-34fd-4ed5-8c34-723cb7cb9b00 HTTP/1.1 200 89 - 1.763 ms
